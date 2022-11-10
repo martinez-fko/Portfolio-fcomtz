@@ -12,10 +12,10 @@
     <nav class="navbar">
       <span>Francisco Mtz</span>
       <ul class="navbar__links">
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#inicio">Sobre mí</a></li>
-        <li><a href="#inicio">Portafolio</a></li>
-        <li><a href="#inicio">Contáctame</a></li>
+        <li><a class="link link--active" href="#home">Inicio</a></li>
+        <li><a class="link" href="#about">Sobre mí</a></li>
+        <li><a class="link" href="#portfolio">Portafolio</a></li>
+        <li><a class="link" href="#contact">Contáctame</a></li>
       </ul>
     </nav>
 
@@ -43,22 +43,48 @@
       <!-- ---- Portfolio ---- -->
       <section id="portfolio" class="hidden">
         <h2>Portafolio</h2>
-        <d iv class="portfolios">
+        <div class="portfolios hidden">
           <div class="portfolio">
             <img src="./assets/img/porta1.jpg" alt="porta1" />
           </div>
 
-          <div class="portfolio">
+          <div class="portfolio hidden">
             <img src="./assets/img/porta2.jpg" alt="porta2" />
           </div>
 
-          <div class="portfolio">
+          <div class="portfolio hidden">
             <img src="./assets/img/porta3.jpg" alt="porta3" />
           </div>
         </div>
       </section>
       <!-- ---- Contact ----- -->
-      <section id="contact" class="hidden"></section>
+      <section id="contact" class="hidden">
+        <h2>Contactame</h2>
+        <form class="form">
+          <input
+            type="text"
+            placeholder="Ingresa tu nombre"
+            name="nameUser"
+            id="nameUser"
+            required
+          />
+          <input
+            type="email"
+            placeholder="Ingresa tu correo"
+            name="emailUser"
+            id="emailUser"
+            required
+          />
+          <textarea
+            name="commentUser"
+            id="commentUser"
+            cols="30"
+            rows="10"
+            placeholder="Escribeme..."
+          ></textarea>
+          <button class="btn">Enviar</button>
+        </form>
+      </section>
     </main>
     <script src="./main.js"></script>
   </body>

@@ -6,9 +6,10 @@
   --color-principal: #5f9df7;
 }
 
-body {
-  background: var(--color-bg);
-  color: var(--color-font);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
 
@@ -17,11 +18,12 @@ body.darkTheme {
   color: var(--color-bg);
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+body {
+  background: var(--color-bg);
+  color: var(--color-font);
 }
+
+
 
 ul {
   list-style: none;
@@ -41,7 +43,9 @@ img {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  align-items: center;
+  height: 50px;
+  padding: 0 1rem;
   position: fixed;
   background-color: var(--color-font);
   box-shadow: 0 0.5rem 1rem rgba(128, 128, 128, 0.15);
@@ -55,6 +59,16 @@ img {
   gap: 1rem;
 }
 
+.link{
+  padding: .5rem;
+  display: inline-block;
+  border-radius: 0.5rem;
+}
+
+.link--active{
+  background: var(--color-principal);
+}
+
 .main {
   padding: 0 1rem;
   max-width: 1024px;
@@ -66,6 +80,7 @@ section {
   flex-direction: column;
   gap: 1rem;
   justify-content: center;
+  align-items: center;
   min-height: 100vh;
 }
 
@@ -97,12 +112,55 @@ section {
   gap: 1rem;
 }
 
+.portfolio:nth-child(1) {
+  transition-delay: 200ms;
+}
+
+.portfolio:nth-child(2) {
+  transition-delay: 400ms;
+}
+
+.portfolio:nth-child(3) {
+  transition-delay: 600ms;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form input,
+.form textarea {
+  padding: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  border: 2px solid transparent;
+  transition: border 0.5s;
+}
+
+.form input:focus,
+.form textarea:focus {
+  border: 2px solid var(--color-principal);
+}
+
+.btn {
+  background: var(--color-principal);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  color: #fff;
+  cursor: pointer;
+}
+
 @media (min-width: 800px) {
 
   .portfolios {
-    grid-template-columns: repeat(3 , 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 300px;
   }
+
   .portfolios img {
     height: 100%;
     width: 100%;
