@@ -141,6 +141,41 @@ section {
   color: var(--color-principal);
 }
 
+.socialNetworks{
+  display: flex;
+  gap: 1rem;
+}
+
+.socialNetworks__link{
+  width: 40px;
+  height: 40px;
+  background: var(--color-font);
+  color: var(--color-bg);
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.socialNetworks__link:hover{
+  background: var(--color-bg);
+  color: var(--color-font);
+}
+
+.cv--download{
+  background: var(--color-principal);
+  padding:.5rem 1rem;
+  border-radius: 7px;
+  transition: all 0.5s;
+}
+
+.cv--download:hover{
+  background: #3583f8;
+}
+
 .about__img {
   width: 200px;
   height: 200px;
