@@ -4,15 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FranciscoMtz</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Francisco Martínez</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body class="darkTheme">
     <!-- ----- NavBar ---- -->
     <nav class="navbar">
-      <span>Francisco Mtz</span>
-      <i class='iconShowMenu bx bx-menu'></i>
+      <span class="navbar__title">Francisco Mtz</span>
+      <i class="iconShowMenu bx bx-menu"></i>
       <ul class="navbar__links">
         <li><a class="link link--active" href="#home">Inicio</a></li>
         <li><a class="link" href="#about">Sobre mí</a></li>
@@ -26,55 +29,77 @@
       <!-- ----- Home -----  -->
       <section id="home" class="hidden">
         <h1 class="home__title">
-          Hola soy <span>Francisco Martinez</span> y soy
+          Hola soy <span>Francisco Martínez</span> y soy
           <span>desarrollador Full Stack</span>
         </h1>
         <div class="socialNetworks">
           <div class="socialNetworks__link">
-            <a href="#">
-              <i class='bx bxl-linkedin'></i>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/francisco-martinez123/"
+            >
+              <i class="bx bxl-linkedin"></i>
             </a>
           </div>
           <div class="socialNetworks__link">
-            <a href="#">
-              <i class='bx bxl-github' ></i>
+            <a target="_blank" href="https://github.com/martinez-fko">
+              <i class="bx bxl-github"></i>
             </a>
           </div>
         </div>
         <div class="cv--download">
-          <a href="#">Descargar CV</a>
+          <a
+            download
+            href="assets/documents/Francisco_Martinez-Desarollador+Full+Stack-CV.pdf"
+            >Descargar CV</a
+          >
         </div>
       </section>
       <!-- ---- About ---- -->
       <section id="about" class="hidden">
-        <h2>Quien soy</h2>
-        <p>
-          Tengo 30 años
-        </p>
+        <h2 class="title">Quien soy</h2>
+        <div class="about__content">
+          <p>
+            Soy Ingeniero en Tecnologías de la Información, me apasiona la
+            <strong>programación</strong> y el <strong>fútbol</strong> . Tengo
+            30 años de edad y habilidad para poder desempeñar un puesto de
+            trabajo como desarrollador. Soy una persona responsable, con
+            aptitudes y actitud.
+          </p>
+        </div>
         <div class="about__img">
-          <img src="./assets/img/perfil.jpg" alt="Este soy yo" />
+          <img src="./assets/img/francisco.jpeg" alt="Este soy yo" />
         </div>
       </section>
       <!-- ---- Portfolio ---- -->
       <section id="portfolio" class="hidden">
-        <h2>Portafolio</h2>
+        <h2 class="title">Portafolio</h2>
         <div class="portfolios">
           <div class="portfolio">
-            <img src="./assets/img/porta1.jpg" alt="porta1" />
+            <img src="./assets/img/Ecommerce_proyecto.png" alt="porta1" />
           </div>
 
           <div class="portfolio">
-            <img src="./assets/img/porta2.jpg" alt="porta2" />
+            <img src="./assets/img/Pokedex_Proyecto.png" alt="porta2" />
           </div>
 
           <div class="portfolio">
-            <img src="./assets/img/porta3.jpg" alt="porta3" />
+            <img src="./assets/img/MemoryGame_Proyecto.png" alt="porta3" />
           </div>
+        </div>
+        <h2>Tecnologías Usadas:</h2>
+        <div class="tecnologias">
+            <img src="assets/icons/js-svgrepo-com.svg" alt="JavaScript">
+            <img src="assets/icons/react-svgrepo-com.svg" alt="React">
+            <img src="assets/icons/html-svgrepo-com.svg" alt="HTML5">
+            <img src="assets/icons/css3-svgrepo-com.svg" alt="CSS3">
+            <img src="assets/icons/redux-svgrepo-com.svg" alt="Redux">
+            <img src="assets/icons/vitejs-svgrepo-com.svg" alt="ViteJS">
         </div>
       </section>
       <!-- ---- Contact ----- -->
       <section id="contact" class="hidden">
-        <h2>Contactame</h2>
+        <h2 class="title">Contáctame</h2>
         <form class="form">
           <input
             type="text"
