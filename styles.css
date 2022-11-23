@@ -40,6 +40,10 @@ a {
   color: inherit;
 }
 
+.color-principal{
+  color: var(--color-principal);
+}
+
 .iconShowMenu {
   position: fixed;
   bottom: 1rem;
@@ -211,6 +215,49 @@ section {
   gap: 1rem;
 }
 
+.portfolio{
+  position: relative;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.portfolio .links{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translateX(-100%);
+  transition: all .5s;
+}
+
+.portfolio:hover .links{
+  transform: translateX(0);
+}
+
+.triangulo-equilatero-bottom-left {
+  width: 0;
+  height: 0;
+  border-right: 50px solid transparent;
+  border-top: 50px solid transparent;
+  border-left: 50px solid var(--color-principal);
+  border-bottom: 50px solid var(--color-principal);
+}
+
+.portfolio .links a{
+  position: absolute;
+  bottom: 30px;
+  left: 10px;
+  font-size: 1.4rem;
+}
+
+.portfolio .links a:nth-child(3){
+  bottom: 5px;
+  left: 35px;
+}
+
+.portfolio .links a:hover{
+  color: #0f0e0e;
+}
+
 .tecnologias{
   display: flex;
   gap: 1rem;
@@ -268,6 +315,10 @@ section {
   .portfolios {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 300px;
+  }
+
+  .portfolios .portfolio{
+    background: var(--color-principal);
   }
 
   .portfolios img {
